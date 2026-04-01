@@ -120,6 +120,12 @@ def build():
     story.append(Paragraph("Rohan Sainju", s["author"]))
     story.append(Paragraph("COSC 320.001 — Algorithm Design and Analysis — Spring 2026", s["author"]))
     story.append(Paragraph("March 31, 2026", s["author"]))
+    story.append(Spacer(1, 0.4 * inch))
+    story.append(Paragraph(
+        '<link href="https://github.com/rosaiju/transit-system-simulator">'
+        'github.com/rosaiju/transit-system-simulator</link>',
+        s["sub"],
+    ))
     story.append(PageBreak())
 
     # ────────────────────────────────────────────────────────────────
