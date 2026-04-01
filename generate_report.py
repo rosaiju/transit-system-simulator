@@ -122,8 +122,9 @@ def build():
     story.append(Paragraph("March 31, 2026", s["author"]))
     story.append(Spacer(1, 0.4 * inch))
     story.append(Paragraph(
-        '<link href="https://github.com/rosaiju/transit-system-simulator">'
-        'github.com/rosaiju/transit-system-simulator</link>',
+        '<link href="https://github.com/rosaiju/transit-system-simulator" '
+        'color="#B5451B"><u>'
+        'github.com/rosaiju/transit-system-simulator</u></link>',
         s["sub"],
     ))
     story.append(PageBreak())
@@ -611,8 +612,9 @@ def build():
     story.append(Paragraph(
         "Complete source code for all 10 modules. "
         "Also available at: "
-        '<link href="https://github.com/rosaiju/transit-system-simulator">'
-        "github.com/rosaiju/transit-system-simulator</link>",
+        '<link href="https://github.com/rosaiju/transit-system-simulator" '
+        'color="#B5451B"><u>'
+        "github.com/rosaiju/transit-system-simulator</u></link>",
         s["body"],
     ))
 
