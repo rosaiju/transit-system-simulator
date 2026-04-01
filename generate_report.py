@@ -589,6 +589,39 @@ def build():
         s["caption"],
     ))
 
+    # ────────────────────────────────────────────────────────────────
+    # APPENDIX — Source Code
+    # ────────────────────────────────────────────────────────────────
+    source_files = [
+        "station.py",
+        "graph.py",
+        "traversal.py",
+        "shortest_path.py",
+        "passenger.py",
+        "undo_stack.py",
+        "sorting.py",
+        "searching.py",
+        "demo_data.py",
+        "main.py",
+    ]
+
+    story.append(PageBreak())
+    story.append(Paragraph("Appendix — Source Code", s["h1"]))
+    story.append(hr())
+    story.append(Paragraph(
+        "Complete source code for all 10 modules. "
+        "Also available at: "
+        '<link href="https://github.com/rosaiju/transit-system-simulator">'
+        "github.com/rosaiju/transit-system-simulator</link>",
+        s["body"],
+    ))
+
+    for fname in source_files:
+        with open(fname, "r") as f:
+            code = f.read()
+        story.append(Paragraph(fname, s["h2"]))
+        story.append(Preformatted(code, s["code"]))
+
     doc.build(story)
     print("Report generated: Transit_System_Report.pdf")
 
